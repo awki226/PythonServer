@@ -1,5 +1,5 @@
 # Alex King
-#Server side for Project 1
+#Server side 
 #Handles requests made by the server
 
 import time
