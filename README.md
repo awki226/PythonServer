@@ -4,7 +4,14 @@
   The purpose of this project was to create a client and server program that was a shared folder server that allowed for uploads and downloading files, along with this the client could view the Download/Upload speed of the file. Also the client is able to print out the directory of the files on the server and view the size of file when they were uploaded.
 
 ### <h2> Introduction: 
-  The shared folder is based wherever the Server.py is located, this allows for the file to be moved to other directories on the machine and still allows for multiple folders to be shared based on the execution path where Server.py is; however, this implementation does not allow the client to change directories only send, request, delete files, along with view the contents of the directory. To run the program the user must compile each .py file with $python3 file.py, Server.py must be running or the client.py cannot connect. The Client.py file has two separate functions Download and Upload that send the request and handle each of it’s functions respectively. To view the speed I used a popular progress bar library from the third party tqdm, which I used a reference from this website here on how to use the tqdm library https://tqdm.github.io/docs/tqdm/. Printing the directory and deleting the file was handled within the conditional
+  The shared folder is based wherever the Server.py is located, this allows for the file to be moved to other directories on the machine and still allows for multiple folders to be shared based on the execution path where Server.py is; however, this implementation does not allow the client to change directories only send, request, delete files, along with view the contents of the directory. 
+### <h2>To run the program: 
+    
+    The user mustcompile each .py file with $python3 file.py, 
+    Server.py must be running or the client.py cannot connect. 
+
+### <h2>Usage notes  
+The Client.py file has two separate functions Download and Upload that send the request and handle each of it’s functions respectively. To view the speed I used a popular progress bar library from the third party tqdm, which I used a reference from this website here on how to use the tqdm library https://tqdm.github.io/docs/tqdm/. Printing the directory and deleting the file was handled within the conditional
 statement. The server handled each of these request sent to it.
   
     HOW TO USE THE Client.py:
@@ -13,10 +20,17 @@ statement. The server handled each of these request sent to it.
     This is the port number
     Will then ask for function
     Enter in like so into the terminal: 
-    UPLOAD
-    DOWNLOAD
-    PRINT
-    DELETE
+    $UPLOAD
+    $Filename
+    ---------
+    $DOWNLOAD
+    $Filename
+    ----------
+    $PRINT
+    $Filename
+    ---------
+    $DELETE
+    $Filename
     
 Then you will be prompted to input a filename for three of the functions
      
