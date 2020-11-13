@@ -20,7 +20,7 @@ statement. The server handled each of these request sent to it.
     
 Then you will be prompted to input a filename for three of the functions
      
-    Implementation:
+### <h3> Implementation:
     SERVER.py
     
 The other request where handled within their respective conditional loops. The Server.py was set up using the serversocket built in library that comes with python 3, I chose this library since I could make TCP handler that would run for quite awhile without timing out. Within this handler I set it to processes requests using conditional if statements, to process requests made by the client. 
